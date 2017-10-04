@@ -22,6 +22,9 @@ function currentLine(katzDeliLine) {
     var line = `The line is currently:`
     for(var i = 1; i < katzDeliLine.length + 1; i++){
       line = line + ` ${i}. ${katzDeliLine[i - 1]}`
+      if(0<i<katzDeliLine){
+        line = line + ','
+      }
     }
     return line
   }
