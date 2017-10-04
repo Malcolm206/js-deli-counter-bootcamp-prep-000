@@ -1,7 +1,7 @@
 var katzDeliLine = []
 function takeANumber (katzDeliLine, name) {
   katzDeliLine.push(name)
-  var position = Number(katzDeliLine[name]) + 1
+  var position = katzDeliLine[name]
   console.log(`Welcome, ${name}. You are number ${position} in line.`)
 }
 function nowServing(katzDeliLine) {
