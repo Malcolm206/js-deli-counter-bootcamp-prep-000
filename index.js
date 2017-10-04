@@ -6,6 +6,6 @@ function takeANumber (katzDeliLine, name) {
 }
 function nowServing(katzDeliLine) {
   var serving = katzDeliLine[0]
-  console.log(`Currently serving ${serving}`.)
+  console.log(`Currently serving ${serving}.`)
   katzDeliLine.shift()
 }
