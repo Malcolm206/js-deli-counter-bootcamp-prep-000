@@ -20,11 +20,11 @@ function currentLine(katzDeliLine) {
   }
   else {
     var line = `The line is currently:`
-    for(var i = 0; i < katzDeliLine.length - 1; i++){
-      line = line + ` ${i + 1}. ${katzDeliLine[i]},`
-    }
-    if(i = katzDeliLine.length) {
-      line = line + ` ${i+1}. ${katzDeliLine[i]}`
+    for(var i = 0; i < katzDeliLine.length; i++){
+      line = line + ` ${i + 1}. ${katzDeliLine[i]}`
+      if(0<i<katDeliLine.length -1){
+        line = line + `,`
+      }
     }
     return line
   }
